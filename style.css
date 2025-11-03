@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(12, 12, 29);
+    color: white;
+}
+/* navbar */
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    color: white;
+    align-items: center;
+    padding: 1rem;
+}
+.logo{
+    display: flex;
+    flex-direction:column;
+}
+
+.options{
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+.resp:hover{
+    border-bottom: 1.5px solid yellow;
+    /* border-radius:30%; */
+    cursor: pointer;
+}
+#menu-toggle{
+    display: none;
+    font-size: large;
+}
+#menu-toggle:active{
+    color: red;
+}
+.login{
+    background-color: blue;
+    width: 3rem;
+    text-align: center;
+    cursor:pointer;
+}
+
+/* bar option */
+.barIcon{
+    display: none;
+}
+.barI{
+    display: block;
+    position:fixed;
+    display: flex;
+    flex-direction:column;
+    right: 20px;
+    top: 3.5rem;
+    gap: 5px;
+    /* border: 1px solid green; */
+}
+
+/*user input */
+.inputB{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+input{
+    height: 8vh;
+    color: aliceblue;
+    width: 90%;
+    padding: 0px 1rem 0px 1rem;
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.inputT{
+    height: 8vh;
+    color: aliceblue;
+    width: 50%;
+    border: 1px solid white;
+    display: flex;
+    border-radius: 5px;
+}
+.cutB{
+    height: 8vh;
+    background-color: rgb(243, 105, 13);
+    border:none;
+    cursor: pointer;
+    width:2rem;
+}
+.cutB:active{
+    background-color: hsl(120, 89%, 49%);
+}
+.out-B{
+    background-color: green;
+    color: white;
+    width: 5rem;
+    height:1.8rem;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#check{
+    display: none;
+}
+
+
+/* about section 2 */
+.sect2{
+    display: none;
+}
+.about{
+    margin: 1rem;
+    /* padding: 1rem; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.about img{
+    margin-top: 1rem;
+    width: auto;
+    height: 50vh;
+}
+.about ul li{
+    text-transform: capitalize;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+/* loginForm */
+.nameTage{
+    margin-bottom:2rem ;
+    background: transparent;
+    font-size:2.5rem;
+}
+#l-form{
+    display: none;
+    height: 90vh;
+}
+#lfm{
+    display: flex;
+    justify-content: center;
+    height:90vh;
+    align-items: center;
+    
+}
+.lForm{
+   border-radius: 1rem;
+   border: 2px solid rgb(0, 0, 0);
+   height: 60vh;
+   background:rgba(255,255,255,0.2);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.lForm input{
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 80%;
+    margin: 1rem;
+    border: 1px solid white;
+    background: none;
+}
+.lForm button{
+    background-color: red;
+    font-weight: bold;
+    padding: 3px;
+
+}
+/* footer */
+footer{
+   text-align: center;
+    height: 17vh;
+}
+footer p{
+    margin: 1rem;
+    font-size: small;
+}
+.mainBox{
+    display:flex;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    align-items: end;
+}
+.f-c{
+    background-color: hsla(0, 0%, 7%, 0.863); 
+}
+.f-c i{
+    background: none;
+}
+
+/* up size */
+@media(min-width:425px){
+    .barI{
+    display: none;
+}
+.about p{
+    width: 50%;
+}
+}
+ /* down size */
+@media(max-width:425px){
+#menu-toggle {
+    display: block;
+  }
+.header .resp{
+    display: none;
+  }
+input{
+    width: 90%;  
+    font-size: 14px;
+}
+.inputT{
+    height: 8vh;
+    width: 80%;
+}
+.out-B{
+    width: 4rem;
+    height:1.6rem;
+    font-size: 14px;
+}
+.output{
+    font-size: small;
+    text-align: center;
+}
+.powered{
+    font-size: small;
+}
+.about img{
+    /* margin-top: 1rem; */
+    width: auto;
+    height:45vh;
+}
+}
