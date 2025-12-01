@@ -69,6 +69,19 @@ a{
     flex-direction: column;
     gap: 10vh;
 }
+.inputT{
+    height: 8vh;
+    color: aliceblue;
+    width: 50%;
+    border: 1px solid white;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px black;
+    
+}
+.inputT:hover{
+    transform: scale(1.02);
+}
 input{
     height: 8vh;
     color: aliceblue;
@@ -78,16 +91,10 @@ input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 5px;
+    outline: none;
 }
 
-.inputT{
-    height: 8vh;
-    color: aliceblue;
-    width: 50%;
-    border: 1px solid white;
-    display: flex;
-    border-radius: 5px;
-}
+
 .cutB{
     height: 8vh;
     background-color: rgb(243, 105, 13);
@@ -99,12 +106,18 @@ input{
     background-color: hsl(120, 89%, 49%);
 }
 .out-B{
-    background-color: green;
-    color: white;
+    background-color: rgb(25, 133, 127);
+    color: rgb(255, 255, 255);
     width: 5rem;
     height:1.8rem;
     font-size: 16px;
     border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 10px 0px black; */
+}
+.out-B:active{
+    transform: scale(0.9);
 }
 #check{
     display: none;
@@ -169,12 +182,25 @@ input{
     margin: 1rem;
     border: 1px solid white;
     background: none;
+    box-shadow: 0px 5px 10px 0px black;
 }
 .lForm button{
     background-color: red;
     font-weight: bold;
-    padding: 3px;
-
+    padding: 3px 4px 3px 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2rem;
+    border: none;
+}
+.lForm button:active{
+    transform: scale(0.9);
+}
+.lForm a{
+    background: none;
+    color: rgb(13, 13, 139);
+    margin-top: 2rem;
+    text-decoration:underline;
 }
 /* footer */
 footer{

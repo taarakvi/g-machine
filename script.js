@@ -4,14 +4,14 @@ function Gfunction(){
     let result = document.querySelector(".output")
     let Gcheck = document.querySelector("#check")
     let pattern = /^(?!\.)(?!.*\.\.)(?=.{6,30}$)(?=.*[a-z])(?=.*\d)[a-z0-9.]+(?<!\.)$/
-    let r = pattern.test(usInp)
+    let r = pattern.test(usInp.toLowerCase())
 
     let patternB = /^(?=.{6,30}$)[a-z]+$/;
-    let rB = patternB.test(usInp)
+    let rB = patternB.test(usInp.toLowerCase())
     let x = "@gmail.com";
     //conditon
     if(r === true){
-    result.innerText = usInp+x
+    result.innerText = (usInp.toLowerCase())+x
     result.style.color="white"
     Gcheck.style.display = "block"
     // result.style.fontSize ="16px"
@@ -19,7 +19,7 @@ function Gfunction(){
     } 
     else if(rB===true){
        let n = Math.floor(Math.random()*(500 - 10)+10)
-        result.innerText = usInp+n+x
+        result.innerText = (usInp.toLowerCase())+n+x
         result.style.color="white"
         Gcheck.style.display = "block"
 
